@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="/global/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <link rel="stylesheet" href="loadingAnimation.html">
+    <title>Template</title>
+  </head>
+  <body class="no-scroll font-Poppins overflow-x-hidden scroll-smooth">
+
+    <section id="navBar" class=" shadow-lg transition-all ease-out duration-100 text-center items-center ">
+      <nav 
+        class="z-10 shadow-lg md:shadow-none md:bg-transparent bg-white m-0 text-left rounded-2xl px-60 py-12 flex align-middle md:justify-around justify-start fixed top-0 md:left-20 left-0 right-0"
+      >
+        <img class="w-68 md:h-12 m-auto z-20 md:mt-3 mt-5 cursor-pointer text-left " src="/file (2).png" alt=""
+        />
+        <ion-icon name="menu" onclick = "onToggleMenu(this)"  class="z-50 block md:hidden cursor-pointer  fa-solid fa-bars p-6  text-4xl "></ion-icon>
+        <ul
+          class="shadow-lg md:shadow-none nav-links mt-20 md:mt-0 top-[-100vh] -ml-2 right-0 pl-4 nav-links duration-500 absolute text-black md:min-h-fit min-h-[40vh] w-full left-0 md:m-auto md:justify-center bg-white md:static md:bg-transparent left-2 align-middle md: md:flex md:gap-12 md:text-white text-lg  tracking-wide  cursor-pointer">
+          <li
+           class="iconBars font-Poppins transition  mt-6 ease-out duration-100 hover:text-orange-500 py-2"
+          >
+            Home
+          </li>
+          <li
+            class="font-Poppins transition ease-out md:mt-6 duration-100 hover:text-orange-500 py-2"
+          >
+            About
+          </li>
+          <li
+            class="font-Poppins transition ease-out md:mt-6 duration-100 hover:text-orange-500 py-2"
+          >
+            Resources
+          </li>
+          <li
+            class="font-Poppins transition ease-out md:mt-6 duration-100 hover:text-orange-500 py-2"
+          >
+            Services
+          </li>
+          <li
+            class="font-Poppins transition ease-out md:mt-6 duration-100 hover:text-orange-500 py-2"
+          >
+            Catalogue
+          </li>
+          <li
+            class="font-Poppins transition ease-out md:mt-6 duration-100 hover:text-orange-500 py-2"
+          >
+            Career
+          </li>
+          <a target="_parent" href="/global/contact.html">
+            <button
+              class="md:mt-6 mt-8 mb-8 font-Poppins border-2 text-white font-medium border-orange-500 transition ease-out duration-100 bg-orange-500 rounded-3xl px-7 py-2 hover:bg-transparent md:hover:text-white md:hover:border-white hover:text-orange-500 hover:border-orange-500"
+            >
+              Contact Us
+            </button></a
+          >
+        </ul>
+      </nav>
+    </section>
+    <section id="on_srollNavBar" class="hidden z-200 transition-all ease-out duration-100">
+      <nav id="on_scroll_navbar"
+        class="bg-white m-32 ml-44 mr-44 shadow-lg mt-10 rounded-2xl px-32 py-12 flex align-middle justify-around fixed top-0 z-10 right-1 left-1 transition-all ease-out duration-500"
+      >
+        <a href="#">
+          <img class="h-10 cursor-pointer" src="/file (2).png" alt=""
+        /></a>
+        <ul
+          class="text-lg font-normal  tracking-wider my-2 cursor-pointer text-orange-500 gap-5 flex space-x-10 justify-end align-middle"
+        >
+          <li
+            class="font-Poppins transition ease-out duration-100 hover:text-orange-700 py-2"
+          >
+            Home
+          </li>
+          <li
+            class="font-Poppins transition ease-out duration-100 hover:text-orange-700 py-2"
+          >
+            About
+          </li>
+          <li
+            class="font-Poppins transition ease-out duration-100 hover:text-orange-700 py-2"
+          >
+            Resources
+          </li>
+          <li
+            class="font-Poppins transition ease-out duration-100 hover:text-orange-700 py-2"
+          >
+            Services
+          </li>
+          <li
+            class="font-Poppins transition ease-out duration-100 hover:text-orange-700 py-2"
+          >
+            Catalogue
+          </li>
+          <li
+            class="font-Poppins transition ease-out duration-100 hover:text-orange-700 py-2"
+          >
+            Career
+          </li>
+          <a target="_parent" href="/global/contact.html">
+            <button
+              class="font-Poppins border-2 font-medium text-white border-orange-500 transition ease-out duration-100 bg-orange-500 rounded-3xl px-7 py-2 hover:bg-white hover:text-orange-500"
+            >
+              Contact Us
+            </button></a
+          >
+        </ul>
+      </nav>
+    </section>
+
+    <!-- HERO SECTION -->
+    <main
+      class=" flex text-center  bg-purple-700 w-screen justify-center align-center h-screen gap-1 items-center relative md:top-0 top-40"
+    >
+      <div id="content" class="md:w-1/2 text-wrap break-words text-left md:ml-64 ml-10 p-10">
+        <span
+          ><h2 class="text-xl tracking-widest text-white uppercase py-4">
+            Creative Agency
+          </h2></span
+        >
+        <span><h3
+            class="text-6xl leading-tight font-semibold tracking-wide text-white"
+          > We Are Here To Give The Best Services </h3></span
+        >
+        <span
+          ><p class="text-white leading-7 my-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in
+            rerum deserunt ex reiciendis voluptatibus corrupti ab ducimus
+            incidunt officiis porro, recusandae eaque alias id aut repellat enim
+            quia commodi!
+          </p></span
+        >
+        <span id="goButtonFull"
+          class="flex bg-purple-200 py-2 gap-1 rounded-full px-1 w-72 justify-between text-xl "
+          ><span id="go_button"
+            class="flex text-left justify-start bg-orange-600 ml-1 text-white p-2 ml-0 rounded-3xl cursor-pointer"
+            >GO</span
+          ><button id="goButtonText"
+            class="ml-2 text-orange-500 font-medium mr-11 justify-center items-start cursor-default"
+          >
+            GET STARTED
+          </button></span
+        >
+      </div>
+      <div class="" id="image">
+        <img
+          class="w-5/6 md:block hidden"
+          src="/pictures/6974855_4380-removebg-preview.png"
+          alt=""
+        />
+      </div>
+    </main>
+    <section
+      id="logo-sec"
+      class="flex relative md:mt-32 mt-40 p-4 justify-center md:gap-6 h-60 align-middle items-center "
+    >
+      <span
+        ><img
+          class="md:h-32 h-20 px-2"
+          src="/pictures/95194164-lettering-with-the-word-love-flat-design-vector-illustration-removebg-preview.png"
+          alt="Love"
+      /></span>
+      <span
+        ><img
+          class="md:h-32 h-20 px-2"
+          src="/pictures/CNN-Logo.wine-removebg-preview.png"
+          alt="CNN"
+      /></span>
+      <span
+        ><img
+          class="h-16 md:h-20 px-2 my-5"
+          src="/pictures/Google_2015_logo.svg-removebg-preview.png"
+          alt="Google"
+      /></span>
+      <span
+        ><img
+          class="md:h-32 h-20 px-2"
+          src="/pictures/95194164-lettering-with-the-word-love-flat-design-vector-illustration-removebg-preview.png"
+          alt="Puma"
+      /></span>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="text-center p-10">
+      <span
+        ><h3
+          class="text-orange-500 font-semibold text-4xl py-6 uppercase tracking-widest"
+        >
+          We do
+        </h3></span
+      >
+      <span
+        ><h2 class="text-purple-900 text-6xl font-bold">
+          Creative Services
+        </h2></span
+      >
+      <span></span>
+      <span
+        ><p class="text-black leading-7 my-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in rerum
+          deserunt ex reiciendis voluptatibus corrupti ab ducimus incidunt
+          <br/>
+          officiis porro, recusandae eaque alias id aut repellat enim quia
+          commodi!
+        </p></span
+      >
+      <div
+        class="flex justify-center align-middle h-2/4 gap-x-10 py-24 -mb-24 drop-shadow-xl w-full"
+      >
+        <span
+          ><img
+            class="h-44 md:h-52 rounded-3xl w-56"
+            src="/pictures/Screenshot 2024-06-01 005448.png"
+            alt=""
+          />
+          <span
+            ><h1 class="text-purple-900 text-2xl text-left pt-8 font-bold">
+              Entertaiment
+            </h1></span
+          >
+          <span
+            ><p
+              class="text-black leading-7 mt-2 text-wrap whitespace-normal text-left"
+            >
+              Lorem ipsum dolor sit amet <br />
+              adipisicing elit. Sint in rerum
+            </p></span
+          >
+        </span>
+        <span
+          ><img
+            class=" md:h-52 rounded-3xl w-56"
+            src="/pictures/Screenshot 2024-06-01 004503.png"
+            alt=""
+          />
+          <span
+            ><h1 class="text-purple-900 text-2xl text-left pt-8 font-bold">
+              Marketing
+            </h1></span
+          >
+          <span
+            ><p
+              class="text-black leading-7 mt-2 text-wrap whitespace-normal text-left"
+            >
+              Lorem ipsum dolor sit amet<br />
+              adipisicing elit. Sint in rerum
+            </p></span
+          >
+        </span>
+        <span
+          ><img
+            class="md:h-52 rounded-3xl w-56"
+            src="/pictures/Screenshot 2024-06-01 113046.png"
+            alt=""
+          />
+          <span
+            ><h1 class="text-purple-900 text-2xl text-left pt-8 font-bold">
+              Design
+            </h1></span
+          >
+          <span
+            ><p
+              class="text-black leading-7 mt-2 text-wrap whitespace-normal text-left"
+            >
+              Lorem ipsum dolor sit amet <br/>
+              adipisicing elit. Sint in rerum
+            </p></span
+          >
+        </span>
+
+        <!-- Laptop Service -->
+        <div
+          class=" hidden md:block bg-purple-700 rounded-3xl w-1/5 p-6 text-center text-wrap text-white tracking-wider font-light"
+        >
+          <span
+            ><h3
+              class="text-white text-2xl pt-8 pb-4 text-center font-medium tracking-wide"
+            >
+              Software Development
+            </h3></span
+          >
+          <span
+            ><p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              cum, unde nobis voluptate tempore suscipit soluta eos dolores
+              magnam, voluptas neque iste quaerat excepturi! Qui placeat
+              voluptas!
+            </p></span
+          >
+           <span><button class="mt-4 p-3 px-6 border-2 border-white transition-all ease-out duration-100 hover:bg-transparent hover:text-white hover:border-2 hover:border-white bg-white text-purple-800 font-medium rounded-full">Learn More</button></span>
+        </div>   
+      </div>
+
+      <!-- Mobile Service -->
+      <div
+      class="md:hidden mt-14 bg-purple-700 rounded-3xl  md:w-1/5 p-12 text-center text-wrap text-white tracking-wider font-light"
+    >
+      <span
+        ><h3
+          class="text-white text-2xl pt-8 pb-4 text-center font-medium tracking-wide"
+        >
+          Software Development
+        </h3></span
+      >
+      <span
+        ><p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+          cum, unde nobis voluptate tempore suscipit soluta eos dolores
+          magnam, voluptas neque iste quaerat excepturi! Qui placeat
+          voluptas!
+        </p></span
+      >
+       <span><button class="mt-4 p-3 px-6 border-2 border-white transition-all ease-out duration-100 hover:bg-transparent hover:text-white hover:border-2 hover:border-white bg-white text-purple-800 font-medium rounded-full">Learn More</button></span>
+    </div>
+    </section>
+
+     <!-- About Us SECTION -->
+     <section id="about_us"
+     class="flex text-center bg-transparent w-full justify-center align-center h-1/2 -ml-5 py-20 md:py-44 items-center relative "
+   >
+     
+     <div class="items-center md:block hidden" id="image">
+       <img
+         class="w-3/5 ml-52  md:block"
+         src="/pictures/13404942_5214876-removebg-preview.png"
+         alt=""
+       />
+     </div>
+     <div id="content" class="pl-20 w-full md:w-1/2 m-auto text-center text-wrap break-words md:text-left md:-ml-32 md:mr-64 p-10">
+      <span><h2 class="text-xl tracking-widest text-purple-700 uppercase mb-0">
+          About us
+        </h2></span>
+      <span><h3
+          class="text-4xl leading-tight text-wrap text-ellipsis font-semibold tracking-wide text-purple-700">
+          Hello We Are <span class="text-purple-900 text-6xl"><br>Web Developers</span>
+        </h3></span>
+      <span
+        ><p class="text-black leading-7 my-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in
+          rerum deserunt ex reiciendis voluptatibus corrupti ab ducimus
+          incidunt officiis porro, recusandae eaque alias id aut repellat enim
+          quia commodi!
+        </p></span>
+       <span><button class="mt-4 p-3 px-6 r-2 transition-all ease-out duration-100 bg-purple-600 hover:text-purple-600 hover:bg-transparent hover: border-2 hover: border-purple-600 text-white rounded-3xl tracking-wider font-medium">Learn More</button></span>
+       <div class="items-center flex align-middle m-auto" id="image">
+        <img
+          class="w-[100vw] mt-20 -mb-20 text-center  md:hidden"
+          src="/pictures/13404942_5214876-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      
+      </section>
+      
+      <!-- Contact Us Section-->
+      
+      <section id="conatct_us" class="bg-purple-300">
+          <div id="upper_part" class=" w-screen text-center py-52 md:pb-80 pl-10 pr-14">
+            <span><h1 class = "text-5xl leading-tight text-wrap text-ellipsis font-semibold tracking-wide text-purple-800">Get In Touch</h1></span>
+            <span
+            ><p class="text-black leading-7 my-6 pl-5 pr-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in
+              rerum deserunt ex reiciendis voluptatibus  corrupti ab ducimus<br>
+              incidunt officiis porro, recusandae eaque alias id aut repellat enim
+              quia commodi!
+            </p></span>
+          </div>
+      </section>
+      <!-- Contact Us Part 2 -->
+      <div id="contact_us_part" class="md:flex bg-white md:m-52 md:w-3/4 drop-shadow-md p-4 rounded-2xl md:-mt-64 pl-10 pr-10">
+        <div id="left_part" class="bg-purple-500  md:w-1/3 p-10 rounded-2xl ">
+          <span><h3 class="text-white text-3xl pt-8 pb-4 text-left font-medium tracking-wide">
+            Contact Information
+          </h3></span>
+          <span><p class="text-white leading-7">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in
+            rerum deserunt ex!
+          </p></span>
+          <span class="flex mt-2"><i class="fa-solid fa-phone font-semibold text-white py-6 text-3xl"></i>
+            <h4 class="font-medium text-white py-6 text-lg pl-2 mt-1">+923686094642</h4>
+          </span>
+          <span class="flex -mt-2"><i class = "fa-solid fa-envelope font-semibold text-white py-6 text-3xl"></i>
+            <h4 class="font-medium text-white py-6 text-lg pl-3 mt-1">mm8366739@gmail.com</h4>
+          </span>
+          <span class="flex -mt-2"><i class = "fa-solid fa-location-dot font-semibold text-white py-6 text-3xl"></i>
+            <h4 class="font-medium text-white py-6 text-lg pl-3 mt-1">mm8366739@gmail.com</h4>
+          </span>
+        </div>
+        <!-- right part of Contact us -->
+        <div id="right_part" class="w-2/4 ml-48 pr-24 md:ml-64 mt-20 mb-10 flex items-center align-center justify-center">
+          <form action="action.php">
+           <div class="flex">
+            <span class="mb-8  mr-10">
+              <label for="first_name"class="peer-focus text-gray-700 text-sm font-medium tracking-wide focus:text-purple">First Name</label>
+              <input type="text"id="first_name" name="first_name" class="border-b-2 text-sm border-b- rounded py-1 px-3 text-gray-600 leading-tight w-64 focus:outline-none focus:text-sm  focus:shadow-outline focus:border-purple-500 focus:w-64">
+            </span>
+            <span class="mb-8">
+              <label for="last_name" class="  text-gray-700 text-sm font-medium tracking-wide">Last Name</label>
+              <input type="text" id="last_name" name="last_name" class="border-b-2 border-b- rounded py-1 text-sm  text-gray-600 w-64 leading-tight focus:outline-none focus:shadow-outline focus:text-sm  focus:border-purple-500 focus:w-64">
+            </span>
+          </div>
+          <div class="mb-8">
+            <span>
+              <label for="email" class="block text-gray-700 text-sm font-medium tracking-wide focus:text-purple">Email</label>
+              <input type="email" id="email" name="email" class="w-full border-b-2 border-b- rounded py-1 text-sm  text-gray-600 leading-tight focus:outline-none focus:shadow-outline focus:text-sm  focus:border-purple-500">
+            </span>
+          </div>
+            <div>
+              <label for="message" class="block text-gray-700 text-sm font-medium tracking-wide focus:text-purple">Message</label>
+              <textarea id="message" name="message" placeholder="Write Your Message Here:" class="p border-b-2 focus:border-purple-500 h-32 rounded w-full py-4 px-3 text-sm  text-gray-600 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+            </div>
+            <button type="submit" class="bg-purple-600 hover:bg-transparent text-white py-3 px-5 my-4 font-medium hover:text-purple-500 transition-all ease-out duration-100 hover:border-purple-500 border-2 rounded-full border-purple-500 focus:outline-none focus:shadow-outline">Send Message</button>
+            </form>
+        </div>
+      </div>
+      <footer class="w-screen p-20 pl-32 bg-[#7E22CE] md:flex gap-6 items-center align-middle justify-center">
+        <div class="w-1/4 h-full grid">
+          <span><img src="/images" class="h-10" alt=""></span>
+          <span><h3 class="py-4 pb-10 text-sm text-black">Your Tagline Goes Here!</h3></span>
+          <span><h2 class="pb-6 text-3xl font-medium text-white">Subscribe Now</h2></span>
+          <form action="action.php" class="gap-1 border-b-2  border-gray-300 w-96 focus:border-purple-500">
+            <label for="icon"><i class = "fa-solid fa-envelope font-semibold text-white py-6 text-2xl  pb-0"></i></label>
+            <input type="email" placeholder="Enter Your Email" class=" mb-2 ml-4 pl-4 text-xl placeholder:text-white text-white bg-transparent  focus:outline-none ">
+          </form>
+          <input type="button" value="Subscribe" class="ml-0 text-center mt-6 w-1/2 text-lg tracking-wide  bg-purple-600 hover:bg-transparent text-white py-3 px-5 my-4 font-medium hover:text-white transition-all ease-out duration-100 hover:border-white border-2 rounded-full border-purple-500 focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="grid mr-28 md:h-64 h-52 mt-10">
+          <span><h2 class="uppercase text-3xl font-medium text-white">Information</h2></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100 mb-1 text-lg tracking-wide">About Us</a></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">Contact Us</a></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">Blog</a></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">Resources</a></span>
+        </div> 
+        <div class="grid  h-52  mr-28 gap-y-1 md:h-64 mt-10">
+          <span><h2 class="uppercase text-3xl font-medium text-white">Helpful Links</h2></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">About Us</a></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">Contact Us</a></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">Blog</a></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">Resources</a></span>
+        </div> 
+        <div class=" mr-28 h-52 mt-8 md:h-64 hidden md:grid">
+          <span><h2 class="uppercase text-3xl font-medium text-white">Our Services</h2></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">About Us</a></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">Contact Us</a></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">Blog</a></span>
+          <span><a href="#" class="text-white hover:text-orange-500 transition-all ease-out duration-100text-lg tracking-wide">Resources</a></span>
+        </div> 
+      </footer>
+      <section id="Page-loader" class="z-50 absolute top-0 bottom-0  h-screen bg-purple-600 w-screen flex m-auto justify-center align-middle items-center">
+        <div id="loader" >
+            <span class="animate-spin inset-0 grid h-28 w-28 border-8 border-white border-t-purple-900 rounded-full">
+            </span>
+        </div>
+    </section>
+  </body>
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+        e.name = e.name === 'menu' ? 'close' : 'menu';
+        navLinks.classList.toggle('top-[10%]')
+    }
+ </script>
+ <script>
+// Get the second navbar element
+const secondNavbar = document.getElementById('on_srollNavBar');
+const navBar2 = document.getElementById('on_scroll_navbar');
+const firstNavbar = document.getElementById('navBar');
+const goButton = document.getElementById('go_button');
+const goButtonText = document.getElementById('goButtonText');
+const goButtonFull = document.getElementById('goButtonFull');
+const pageLoader = document.getElementById('Page-loader');
+const body = document.querySelector('body');
+
+// Function to toggle the visibility and animation of the second navbar
+function toggleSecondNavbar() {
+  if (window.scrollY > 10) {
+    secondNavbar.style.display = 'block';
+    secondNavbar.classList.add('show');
+    firstNavbar.style.display = 'none';
+    secondNavbar.style.transition = 'ease-out all 0.5s';
+  } else {
+    secondNavbar.classList.remove('show');
+    setTimeout(() => {
+      secondNavbar.style.display = 'none';
+      firstNavbar.style.display = 'block';
+    }, 50); // Match the transition duration
+  }
+}
+
+function moveX() {
+  console.log('Yes you clicked right');
+  goButton.style.transform = 'translateX(220px)';
+  goButtonText.innerText = '';
+  goButton.style.transition = 'ease-out all 0.5s';
+  goButtonFull.style.transition = 'ease-out all 0.5s';
+  goButtonFull.style.opacity = '0';
+  goButton.style.opacity = '1';
+  setTimeout(() => {
+    location.reload();
+  }, 400);
+}
+
+function secondNavbarOnMobile() {
+  if (window.innerWidth < 768) {
+    secondNavbar.style.display = 'none';
+    firstNavbar.style.display = 'block';
+  }
+}
+
+// Attach scroll event listener to the window
+window.addEventListener('scroll', toggleSecondNavbar);
+goButton.addEventListener('click', moveX);
+window.addEventListener('scroll', secondNavbarOnMobile);
+window.addEventListener('load', function () {
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => {
+    pageLoader.style.display = 'none';
+    body.style.display = 'block';
+    // Allow scrolling after loading
+    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'auto';
+  }, 1200);
+});
+
+</script>
+</html>
